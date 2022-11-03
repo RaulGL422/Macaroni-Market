@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: bisque;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Header Init */
+
+#header {
+    top: 0;
+    width: 100%;
+    height: 100px;
+    min-height: 75px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+}
+
+
+#header-img {
+    width: 250px;
+}
+
+#header>nav>ul {
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.logo {
+    width: 50%;
+    display: flex;
+    font-family: var(--font);
+}
+
+.logo>h1 {
+    padding: 20px 50px;
+}
+
+#header>nav>ul>li {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 50px;
+    list-style-type: none;
+    text-align: -webkit-match-parent;
+    display: list-item;
+    margin-top: 20px
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Header Final */
+
+/* Form Init */
+
+.form {
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 45px;
+    font-family: var(--font);
+    text-align: center;
+}
+
+#email {
+    width: 30%;
+    height: 40px;
+    font-family: var(--font);
+    font-size: 18px;
+    text-align: center;
+}
+
+#submit {
+    display: block;
+    margin-left: 45%;
+    margin-top: 20px;
+    width: 10%;
+    height: 35px;
+    font-size: 18px;
+    font-family: var(--font);
+    background-color: #FFF8C3;
+}
+
+/* Form Final */
+
+/* Features Init */
+
+.features {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.titlef {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.text {
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-family: var(--font);
+    margin: 10px;
+    text-align: center ;
+}
+
+/* Features Final */
+
+/* Recipes Init */
+
+.titler {
+    text-align: center;
+    font-size: 18px;
+    font-family: var(--font);
+}
+
+.videos {
+    display: flex;
+    justify-content: center;
+    background-color: #FFF8C3;
+}
+
+iframe {
+    margin: 0px 40px;
+    width: 560px;
+    height: 315px;
+}
+
+/* Recipes Final */
+
+/* Prices Init */
+
+.items {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.item1, .item2, .item3 {
+    margin: 0px 40px;
+    border: 2px solid black;
+    width: 30%;
+    min-width: 250px;
+    background-color: white;
+    height: 270px;
+    overflow: hidden;
+    border-bottom: none;
+}
+
+.titlep {
+    font-family: var(--font);
+    font-size: 26px;
+    background-color: gray;
+    margin: 0;
+    padding: 10px;
+}
+
+.price {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.textp {
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-family: var(--font);
+    margin: 10px;
+    text-align: center;
+}
+
+/* Price Final */
+
+/* Buy Init */
+
+.buyitems {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.buy1, .buy2, .buy3 {
+    margin: 0px 40px;
+    width: 30%;
+    min-width: 250px;
+    height: 50px;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    background-color:rgb(190, 255, 92);
+    border: 2px solid black;
+    border-top: none;
+    font-size: 20px;
+    font-family: var(--font);
+}
+
+button:hover {
+    background-color:rgb(87, 241, 25);
+    cursor: pointer;
+}
+
+/* Buy Final */
+
+/* Footer */
+
+.foot {
+    margin-top: 80px;
+    background-color: rgb(248, 229, 229);
+    height: 70px;
+    border-top: 1px solid black;
+}
+
+.foot ul {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    justify-content: center;
+}
+
+.foot ul li {
+    list-style: none;
+    margin: 0px 40px;
+    font-size: 15px;
+    font-family: var(--font);
+}
+
+.copy {
+    padding-left: 100px;
+}
+
+@media only screen and (max-width: 1400px) {
+    #header>nav>ul {
+        width: 10vw;
+        margin-left: 80px;
+    }
+    #header>nav>ul>li {
+        font-size: 24px;
+        margin:25px;
+    }
+
+    .textp {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+    .copy {
+        display: block;
+        text-align: center;
+    }
+}
